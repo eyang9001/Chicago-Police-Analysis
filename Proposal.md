@@ -61,7 +61,7 @@ In terms of applying machine learning to our dataset we like to utilize both sup
 - Demographics
 - Tenure
 - Rank
-- # of awards
+- Number of awards
 - District/Beat
 - Other significant attributes we discover from previous analyses
 
@@ -82,3 +82,25 @@ Visualization is an extremely powerful tool, and it will be important to craftin
 Supplemental Schema Details
 
 The following figure details how we will integrate the Arrest, Crime, and Settlement sources into the main CPDB database. 
+![Schema](/Proposal%20Images/Schema.png)
+
+External databases Additional Detail
+
+**The Arrest database** is sourced from the following link: [https://home.chicagopolice.org/online-services/public-arrest-data/](https://home.chicagopolice.org/online-services/public-arrest-data/)
+![Arrest_Example](/Proposal%20Images/ArrestExample.png)
+
+**The Crime database** is sourced from the following link: [https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2](https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-present/ijzp-q8t2)
+![Crime_Example](/Proposal%20Images/CrimeExample.png)
+
+**The Settlement database** is sourced from the following link:
+[http://projects.chicagoreporter.com/settlements/search/cases](http://projects.chicagoreporter.com/settlements/search/cases)
+
+Settlement Table:
+![Settlement_Table](/Proposal%20Images/SettlementTable.png)
+
+Settlement\_Officer Table:
+
+![Settlement_Officer_Table](/Proposal%20Images/OfficerTable.png)
+
+Officer Table:
+![Officer_Table](/Proposal%20Images/Officer2Table.png)
