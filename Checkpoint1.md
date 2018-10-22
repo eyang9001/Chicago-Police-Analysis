@@ -188,4 +188,4 @@ Looking at the above tables closely, we can see that the officers who have the m
 
 ## Conclusion
 
-The most difficult part of this assignment was first getting acclimated with the table structures and knowing which joins were necessary for each analysis. Additionally, learning SQL for those of us who weren&#39;t versed in this language took the most time and effort. But overall our questions were reasonably answered by the data we have at our disposal. Moving forward we expect difficulties to shift towards data integration, interpretation and cleaning, as opposed to access and extraction.
+The most difficult part of this analysis was first getting acclimated with the table structures and knowing which joins were necessary for each question. Additionally, learning SQL for those of us who weren&#39;t versed in this language took the most time and effort. But overall our questions were reasonably answered by the data we have at our disposal. Moving forward we expect difficulties to shift towards data integration, interpretation and cleaning, as opposed to access and extraction.
