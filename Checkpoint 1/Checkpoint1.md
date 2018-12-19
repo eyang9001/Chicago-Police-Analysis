@@ -38,7 +38,7 @@ _group by officer\_id, file\_year) as t group by t.officer\_id order by avg\_all
 
 The histogram below shows a high level view of the distribution. With this simple analysis we can see a few things. First off, the vast majority of officers have very few complaints against them on an annualized basis. However, these is a fairly long tail, where about 2% of officers have a very high amount of complaints against them on average. We could certainly see how this analysis looks in more fine detail, but where we would like to focus our attention is how our second cohort of between 2 and 4 complaints per year breaks out once we normalize the data. It is clear that the vast majority of the 2% of trailing officers are likely to be repeat offenders, but this may change once normalized.
 
- ![](/02_Group/Images/q1.png)
+ ![](/Images/q1.png)
 
 ## Question #2
 **Question:** What is the range of complaints to allegations as a ratio for all officers? Are officers more likely to hold a specific position when they have allegations filed against them - i.e. what are the average number of complaints and acquittals filed for officers at different stages of tenure?_
@@ -92,7 +92,7 @@ _group by a.id_
 
 **Graph 3.1** : Threshold test of date range to find matches between Complaints and TRRs
 
-![](/02_Group/Images/graph31.png)
+![](/Images/graph31.png)
  
 As a result, the number of matches started to plateau after 30 days. We also figured that 30 days is enough of a grace period for civilians to file their allegations after incidents occur.
 
