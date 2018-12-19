@@ -6,15 +6,13 @@ As an initial gut check, we took a look at how many awards each of the officers 
 
 **Figure 1:** _Box and Whisker Plot of number of awards for bad and good officers_
 
- ![](/02_Group/Checkpoint/6/images/OfficerAwards.png)
+<img src="/Checkpoint 6/images/OfficerAwards.png" width="80%">
 
 We then took a look by &#39;Award Type&#39; to see how each award is distributed across the two groups of officers. Our results are displayed below in Figure 2. As seen in the chart, there are two award types that have a higher percentage given out to _&#39;Bad&#39;_ officers: _Chicago Police Leadership Award_ (22% given to Bad officers) and _Thomas Wortham IV Military And Community Service Award_ (25% given to Bad officers). Overall, these two awards are rare, but it is interesting that a relatively high proportion are still given to officers we deem as _&#39;Bad&#39;_.
 
 **Figure 2:** Award Distribution across Bad and Good Officers by Award Type
 
- ![](/02_Group/Checkpoint/6/images/AwardType.png)
-
- ![](/02_Group/Checkpoint/6/images/AwardType.png)
+<img src="/Checkpoint 6/images/AwardType.png" width="80%">
 
 We then began taking a look at the award distribution across the percentile rankings included in the CPDB. Within CPDB, each officer has a percentile ranking in four categories: Civilian Allegations, Honorable Mentions, Internal Allegations and Tactical Response Reports (TRRs).  For each of these metrics, we took a look at how the awards are spread across the bad vs. good officer distribution. Across each measure, having a higher percentile indicates that a given officer has received higher amounts of the associated value (higher number of allegations, higher number of honorable mentions,etc).
 
@@ -22,14 +20,14 @@ As a baseline, we first plotted the award distribution across the &#39;Honorable
 
 **Figure 3:** Award distribution vs. Honorable Mention Percentile
 
- ![](/02_Group/Checkpoint/6/images/HonerableMentionPercentile.png)
+<img src="/Checkpoint 6/images/HonerableMentionPercentile.png" width="80%">
 
 As you can see in Figure 3, the result is as expected, and the awards increase as the percentile of honorable mention increases. It is likely the &#39;Honorable Mention Percentile&#39; was calculated by CPDB with award counts.
 
 From here, we took a look at the award distribution across the Civilian Complaint percentiles.
 
 **Figure 4:** Award distribution across Civilian Complaint Percentile 
-![](/02_Group/Checkpoint/6/images/ComplaintPercentile.png)
+<img src="/Checkpoint 6/images/ComplaintPercentile.png" width="80%">
 
 The overall distribution is surprising because it looks like there is a positive correlation between having civilian complaints and having more awards. We incorrectly hypothesized this would be a negative correlation. Also, there is a large proportion of awards going to the _&#39;Bad&#39;_ officers as the percentile increases (on the x axis). This makes sense given that the bad officers have high Civilian Complaint percentiles.
 
@@ -37,7 +35,7 @@ Next, we looked at the award distribution across the Internal Allegations percen
 
 **Figure 5:** Award distribution across Internal Allegation Percentile
 
- ![](/02_Group/Checkpoint/6/images/InternalPercentile.png)
+<img src="/Checkpoint 6/images/InternalPercentile.png" width="80%">
 
 From this figure, we can conclude that the officers who get more internal allegations get significantly less awards. We were not surprised by this result, as this distribution is what we were expecting for both civilian complaint percentile as well as internal allegation percentile. It seems that awards are given at least somewhat based upon the number of internal allegations there are against an officer.
 
@@ -45,7 +43,7 @@ Lastly, we looked at the award distribution across the TRR percentiles:
 
 **Figure 6:** Award distribution across TRR Percentile
 
- ![](/02_Group/Checkpoint/6/images/TRRPercentile.png)
+<img src="/Checkpoint 6/images/TRRPercentile.png" width="80%">
 
 From this, it looks like there isn&#39;t much of a correlation between the TRR percentile of officers and them receiving awards. This makes sense to us because TRRs are created in result of officers documenting incidents that may or may not be a result of them being a bad officer. We would not go as far to say officers with more TRRs are more problematic. And because of this, it makes sense how TRR percentile has little correlation with officer awards.
 
