@@ -11,8 +11,7 @@ In this checkpoint, our team focused on integrating the crime and arrest data to
 We first computed the district average number of complaints per officer per year. We completed this task in Trifecta using our previously computed statistic of average number of complaints at an officer level in checkpoint one. From there, for each officer we divided their current average number of complaints by their district average. Hence, if there was a higher district average, an individual officers number of complaints should go down. Below is a histogram of the normalized results in conjunction with the original unnormalized analysis.
 
 **Figure 1** : Percent of Officers vs. Average Number of Complaints Per Year
-
- ![](/02_Group/Checkpoint/2/images/c2results1.png)
+<img src="/Checkpoint 2/images/c2results1.png">
 
 Here we see some interesting, but largely expected results. We see that holistically, the number of officers with a large amount of normalized complaints shifts downwards. However, the shift created a sort of skewed left distribution. We were fairly surprised to see this fact, and specifically that there was still a significant amount of officers with over 1 complaint per year on average even though we normalized for the area. Intrigued, we to continued to dig further.
 
@@ -29,11 +28,11 @@ We then created two graphs, which are shown below. Each point on both graphs rep
 
 **Figure 2** : District Complaints Normalized by Arrests
 
- ![](/02_Group/Checkpoint/2/images/c2results2.png)
+<img src="/Checkpoint 2/images/c2results2.png">
 
 **Figure 3** : District Complaints Normalized by Crime Data
 
- ![](/02_Group/Checkpoint/2/images/c2results3.png)
+<img src="/Checkpoint 2/images/c2results3.png">
 
 One interesting finding that we were not expecting, was the trend of relative complaints as crime and arrest rates go up in the districts. We were expecting there to be a higher proportion of complaints for the districts that were in areas that had high levels of arrests and crime. But from our analysis, there is actually a negative correlation.
 
