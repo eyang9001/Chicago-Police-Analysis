@@ -16,7 +16,7 @@ The first step in this project was selecting the main measure to dive deep on. A
 
 **Figure 1.1** : Percent of Officers vs. Average Number of Allegations per Year
 
- ![](/02_Group/Images/final11.png)
+ ![](/Images/final11.png)
 
 With this simple analysis a few things are evident. First off, the vast majority of officers have very few allegations filed against them on an annualized basis - indicating the suspected bifurcation. However, this is not enough to successfully segment officers given the diversity of different operating environments faced by officers at scale.
 
@@ -24,7 +24,7 @@ Next, the relationship between internal TRR reports filled out by officers and t
 
 **Figure 1.2** : Number of Matched Allegations and TRRs vs. Date Range Threshold
 
- ![](/02_Group/Images/final12.png)
+ ![](/Images/final12.png)
 
 These results showed that a large majority of the allegations don&#39;t correspond to TRR&#39;s in the database (depending on timeline chosen, well over 50%). This is something we would absolutely look into if we were to continue this project - and it is something we find suspicious. Moving forward we focused in on our most stable and robust metric, average number of allegations per year.
 
@@ -36,7 +36,7 @@ First, the district average number of allegations per officer per year was compu
 
 **Figure 2.1** : Percent of Officers vs. Average Number of Allegations Per Year
 
- ![](/02_Group/Images/final21.png)
+ ![](/Images/final21.png)
 
 Here we see some interesting, but largely expected results. Holistically, the number of officers with a large number of normalized allegations shifts downwards. However, this shift creates a sort of skewed left normalized distribution. We were fairly surprised to see this fact, and specifically we were interested that there was still a significant amount of officers with over 1 allegation per year on average following district normalization.
 
@@ -45,10 +45,10 @@ Our next step was to normalize the number of allegations for each officer by the
 Two graphs were created, which are shown below. Each point on both graphs represents a separate district. On the y axis of each graph, is the district allegations per officer normalized by the number of arrests or crimes per officer within the district. On the x axis is the number of arrests or crimes per officer in that district. This gives a sense of how having more crimes or arrests per officer (an indicator of likelihood to use force) correlates to how many allegations are filed against associated officers on a per capita basis.
 
 **Figure 2.2** : District Allegations Normalized by Arrests
- ![](/02_Group/Images/final22.png)
+ ![](/Images/final22.png)
  
 **Figure 2.3** : District Allegations Normalized by Crime Data
- ![](/02_Group/Images/final23.png)
+ ![](/Images/final23.png)
 
 One interesting finding that we were not expecting, was the trend of relative allegations as crime and arrest rates increases. We were expecting there to be a higher proportion of allegations for the districts that were in areas that had high levels of arrests and crime when factoring in number of officers. But from our analysis, there is actually a negative correlation.
 
@@ -64,7 +64,7 @@ Using GraphX in Spark, this representation was created and two core analyses wer
 
 **Figure 3.1** : Connected Components Analysis (At Officer Level)
 
- ![](/02_Group/Images/final31.png)
+ ![](/Images/final31.png)
 
 Looking at this graph, some interested results were observed. First, it is clear that there are several clusters which have very high numbers of allegations for the given number of officers in that cluster, particularly in the 15 - 25 officer range (circled in maroon). This indicates that potential repeat offenders will actually work together over time. This is further demonstrated by adding a linear regression line to get a general sense of the average number of allegations (correlated to weight) per officer in each cluster.
 
@@ -72,7 +72,7 @@ To further examine the connectedness of the officers, the PageRank algorithm was
 
 **Figure 3.2** : PageRank Analysis (At Officer Level)
 
-  ![](/02_Group/Images/final32.png)
+  ![](/Images/final32.png)
 
 Looking at the figure of PageRank scores, a similar behavior can found. Here, we see there is an inflection point past about 1.2 PageRank score where officers are highly connected - i.e. they have many different claims against them with several different officers. This methodology represents an interesting way to identify high risk officers - and we would recommend potentially extending this process internally within the Chicago police department.
 
@@ -123,11 +123,11 @@ To analyze the effect of reprimanding officers, the time interval in days betwee
 
 **Figure 6.1:** Histogram of intervals (days) between allegations after being Reprimanded (bad officers on right)
 
- ![](/02_Group/Images/final61.png)
+ ![](/Images/final61.png)
 
 **Figure 6.2:** Histogram of intervals (days) between allegations after not being Reprimanded (bad officers on right)
 
- ![](/02_Group/Images/final62.png)
+ ![](/Images/final62.png)
 
 These findings are summarized below by computing the overall averages for each interval:
 
@@ -144,7 +144,7 @@ We then took on the task of exploring if there is any significant difference bet
 
 **Figure 6.4:** _Box and Whisker Plot of number of awards for Bad and Good Officers_
 
- ![](/02_Group/Images/final64.png)
+ ![](/Images/final64.png)
 
 Surprisingly, the Bad Officers have a higher number of awards on average. We suspect that the Good Officer average is pulled down by new officers who have not active long enough to accrue awards or complaints.
 
@@ -152,7 +152,7 @@ Within CPDB, each officer has a percentile ranking in four categories: Civilian 
 
 **Figure 6.5:** Award distributions across Honorable Mention, TRR, Civilian Complaint &amp; Internal Complaint Percentiles
 
- ![](/02_Group/Images/final651.png)
+ ![](/Images/final651.png)
 
  ![](/02_Group/Images/final652.png)
 
