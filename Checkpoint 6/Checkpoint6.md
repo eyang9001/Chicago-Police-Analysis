@@ -47,10 +47,10 @@ Lastly, we looked at the award distribution across the TRR percentiles:
 
 From this, it looks like there isn&#39;t much of a correlation between the TRR percentile of officers and them receiving awards. This makes sense to us because TRRs are created in result of officers documenting incidents that may or may not be a result of them being a bad officer. We would not go as far to say officers with more TRRs are more problematic. And because of this, it makes sense how TRR percentile has little correlation with officer awards.
 
-**Conclusion**
+## Conclusion
 
 The most significant analysis in this checkpoint is comparing the distribution of awards across the Civilian Complaint percentile and the Internal Allegations percentile. From the results, it looks like internal allegations have a strong effect in preventing officers from getting awards, but civilian complaints do not have the same effect.
 
-**Lessons Learned**
+## Lessons Learned
 
 Using Tableau, our biggest issue was using the location polygons in CPDB. We initially wanted to create a map representation of the allegations between the good and bad officers, but were unable to get the spatial info from CPDB to work with Tableau. Also, it took a while to get the formatting of the axes in the figures to be big enough to be readable when included in our writeup. As for positives, Tableau was very user friendly and made it easy for us to do exploratory analyses at a very quick and efficient pace.
