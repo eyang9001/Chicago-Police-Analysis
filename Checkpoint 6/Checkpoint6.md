@@ -1,4 +1,4 @@
-**Chicago Police Department - Checkpoint 6 - Visualization**
+# Chicago Police Department - Checkpoint 6 - Visualization
 
 To continue our analysis on repeat offending officers, we took on the task of exploring if there is any significant difference between the number of awards given to officers we have labeled as &#39;repeat offenders&#39; as compared to the others. For the purposes of simplification, we have labeled the &#39;repeat offenders&#39; as **&#39;Bad&#39;** in the visualizations, and the other cohort as **&#39;Good&#39;**. Our hypothesis was that Bad officers will not have as many awards comparatively - and if this hypothesis is proved wrong, this may be an indicator that there is a level of systemic hiding of these repeat offenders.
 
