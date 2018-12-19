@@ -12,19 +12,9 @@ In order to explore this question - we sought to look at co-accusals of officers
 
 Using GraphX in Spark (through the GraphFrame package for Python adaptation) we were able to create such a representation. From here, we ran two core analyses. As mentioned in the queries document, we only used data from one full year for both analysis. The reason for this is explained further in the specific methods. First we ran a connected components analysis to create distinct groups of officers. In this analysis, an officer is added to a cluster if any connection is made to one or more officers in that particular cluster. This analysis benefitted from a one year time frame, because it was a sufficient lapse in time to create clusters but not so long that all officers eventually were grouped into the same cluster. From this analysis we were able to detect about 600 connected components, from approximately 2,100 officers. From these clusters we were able to create the total number of officers in each cluster, and the total edge weight for the cluster. We have plotted both metrics on the histogram below.
 
-
-
-
-
-
-
-
-
-
-
 **Figure 1** : Connected Components Analysis (Scatter Plot)
 
- ![](/02_Group/Checkpoint/3/images/ch3Fig1.png)
+ <img src="/Checkpoint 3/images/ch3Fig1.png">
 
 Looking at this graph, we can see some interesting results. First, we observe that there are some clusters, particularly in the 15 - 25 officer range, which had a very high number of complaints for the given number of officers in that cluster. This indicates that potential repeat offenders will actually work together over time. This is further demonstrated by adding a linear regression line to get a general sense of the average number of complaints (correlated to weight) per officer in each cluster.
 
@@ -32,7 +22,7 @@ To further examine the connectedness of the officers, we also sought to run the 
 
 **Figure 2** : PageRank Analysis (Histogram)
 
-  ![](/02_Group/Checkpoint/3/images/ch3Fig2.png)
+<img src="/Checkpoint 3/images/ch3Fig2.png">
 
 Looking at the figure of PageRank scores, we can see a similar behavior. Here we see there is an inflection point past about 1.2 PR score where officers are highly connected - i.e. they have many different claims against them with several different officers.
 
@@ -48,7 +38,7 @@ We calculated the time interval in days between complaints for each officer, and
 
 **Figure 3** : Histogram of Interval B/W all complaints (Density vs. Allegation Interval Days)
 
- ![](/02_Group/Checkpoint/3/images/Overall_Interval_Histograms.png)
+<img src="/Checkpoint 3/images/Overall_Interval_Histograms.png">
 
 Looking at the this first plot, we see what is largely to be expected, and the intervals for the &#39;repeat offenders&#39; is more heavily aggregated towards the left. The density of the first bucket (interval of 0 to 50 days) for &#39;repeat offenders&#39; is around 45%, whereas the first bucket for &#39;non-repeat offenders&#39; is only around 27%. Note - the x axis for both of these plots is the same. This means the repeat offenders have a higher proportion of short intervals between complaints against them.
 
@@ -58,7 +48,7 @@ To dig a bit deeper, we wanted to see if getting disciplined has an affect on th
 
 **Figure 4:** Histogram of intervals between complaints after Disciplined complaints (days)
 
- ![](/02_Group/Checkpoint/3/images/Disciplined_Interval_Histograms.png)
+<img src="/Checkpoint 3/images/Disciplined_Interval_Histograms.png">
 
 As expected, the density of the first bucket (0-50 days) drops for both &#39;Repeat offenders&#39; and &#39;non-Repeat Offenders&#39;, but not by much. This means the officers are reacting towards the discipline and more time goes by before they act out again. However, we expected the effect to be much larger on the Repeat Offenders given that they simply have a higher volume of complaints. This is something to dig into further as we expand upon this segmentation.
 
@@ -66,7 +56,7 @@ We then looked at the counter-set of intervals between complaints if the officer
 
 **Figure 5:** Histogram of intervals between complaints after Non-Disciplined complaints (days)
 
- ![](/02_Group/Checkpoint/3/images/Undisciplined_Interval_histograms.png)
+<img src="/Checkpoint 3/images/Undisciplined_Interval_histograms.png">
 
 Again, as expected we see an increase in density for the lower-bound intervals for both groups of officers, meaning less time passes between them getting another complaint after getting away without punishment for a complaint.
 
