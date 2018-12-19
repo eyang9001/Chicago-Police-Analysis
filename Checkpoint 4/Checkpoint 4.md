@@ -7,7 +7,7 @@ First, we explored utilizing k-means clustering to verify our previous analysis 
 
 **Figure 1** : Percent of Officers vs. Average Number of Complaints Per Year
 
- ![](/02_Group/Checkpoint/4/images/ch1fig1.png)
+<img src="/Checkpoint 4/images/ch1fig1.png">
 
 By running our first set of spark code as shown in the queries document, we were able to cluster the officers into two distinct groups. After examining the two groups, we were very happy to see that we had only misclassified 887 total officers out of about 14,000 officers. Our output has been provided in a supplemental CSV file named k\_means\_evaluation. As our project moves forward, following our next two checkpoints we would like to dig into performing this analysis with additional dimensions, and also clustering officers move tightly using smaller timeframes.
 
@@ -23,7 +23,7 @@ For our supervised method, we desired to build a decision tree model to predict 
 
 To do this, we performed joins on the overall table from checkpoint 2 with the normalized allegation counts off of crime and arrest data, with the k-means clustering classifications. We also had to do an additional join from an aggregation of awards for each officer from the DATA\_AWARD table. With all of the features we want to use for the prediction in one table, we then had to vectorize the columns, which required string indexing on the attributes: Rank, Tenure and Race. By using the clustering classification as the label, we attempted to create a decision tree model in Spark, with a 70/30 cross-validation split on our data. Previously, we ran into errors when executing the display of the prediction model. Below is an image of the previous error message our spark notebook was giving:
 
- ![](/02_Group/Checkpoint/4/images/ch1fig2.png)
+<img src="/Checkpoint 4/images/ch1fig2.png">
 
 To alleviate our issue, we tried testing our model with different classifiers, but similar errors kept happening. However, we restarted our cluster completed (not a clone) and ran the code again and it was successful. One slight modification that we added to our original code was to cache our training dataset and the pipeline - which helped with runtime speed as well.
 
