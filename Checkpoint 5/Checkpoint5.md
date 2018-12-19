@@ -12,7 +12,7 @@ On the basis of the analysis done in the earlier checkpoints, we already had the
 
 **Figure 1** : **SQL View integrating Settlement Data with previous analyses on whether officers are bad or not (column &#39;is\_bad\_officer\_involved&#39;)**
 
- ![](/02_Group/Checkpoint/5/images/ch5fig1.png)
+<img src="/Checkpoint 5/images/ch5fig1.png">
 
 When we matched the settlements with our list of repeat offenders, we realized only ~5% of the settlements involved the repeat offenders. This was counterintuitive at first because we figured they would account for more settlements due to the fact that they cause more trouble. But thinking about it more, we can attribute the low % as a reason for how the &#39;repeat offender&#39; officers were able to hide under the radar and stay employed on the force while committing offences simply by not being involved in settlements.
 
@@ -26,7 +26,7 @@ Training this model on 80% of the dataset, we received 94.6% accuracy on the tra
 
 **Figure 2: Result of training and testing the Deep Neural Net (training accuracy of 94.7% and testing accuracy of 91.5%)**
 
- ![](/02_Group/Checkpoint/5/images/ch5fig2.png)
+<img src="/Checkpoint 5/images/ch5fig2.png">
 
 ## Conclusion
 
