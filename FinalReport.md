@@ -154,7 +154,7 @@ Within CPDB, each officer has a percentile ranking in four categories: Civilian 
 
  ![](/Images/final651.png)
 
- ![](/02_Group/Images/final652.png)
+ ![](/Images/final652.png)
 
 As a baseline, we first plotted the award distribution across the &#39;Honorable Mention Percentile&#39;. As you can see, the result is as expected, and the awards increase as the percentile of honorable mention increases. It is likely the &#39;Honorable Mention Percentile&#39; was calculated by CPDB with award counts.
 
